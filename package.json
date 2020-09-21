@@ -4,8 +4,8 @@
   "description": "An app for testing basic authentication & authorization",
   "main": "index.js",
   "scripts": {
-    "start": "node index",
-    "dev": "nodemon index"
+    "start1": "node 1/index.js",
+    "dev1": "nodemon 1/index.js"
   },
   "keywords": [],
   "author": "Aashish Loknath Panigrahi",
