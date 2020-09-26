@@ -1,5 +1,5 @@
 /*
-    Program : Adding, removing & updating data of users from the database.
+    Program : Adding, removing & updating session data of users from the database.
     Author : Aashish Loknath Panigrahi (@asxyzp)
 */
 const path = require('path');
