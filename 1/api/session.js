@@ -12,7 +12,7 @@ const session = deta.Base('sessionDB');
 
 /*
     TL;DR :
-    session : Deta Base w/ name 'sessionDB' (not same as sessionDB object)
+    session : Base object w/ name 'sessionDB' (not same as sessionDB object)
     sessiondb() : Function which creates sessionDB object
     sessionDB : Object which allows to access methods createSession(), getSession() & deleteSession()
 */
