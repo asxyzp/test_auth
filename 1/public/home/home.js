@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $('.signup').click(function(){
+        $("form").attr("action","/signup?");
+        $(".btn").html('sign-up');
+    });
+    $('.signin').click(function(){
+        $("form").attr("action","/signin?");
+        $(".btn").html('sign-in');
+    });
+});

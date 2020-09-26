@@ -1,0 +1,38 @@
+body{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.signupin-div{
+    width:80%;
+    border: 5px solid #000;
+    border-radius: 15px;
+    box-shadow: 3px 3px #000;
+}
+
+h1{
+    color:#000;
+    font-weight: 900;
+}
+
+input[type="text"]{
+    width:80%;
+    display: block;
+    margin: auto;
+}
+
+input[type="password"]{
+    width:80%;
+    display: block;
+    margin: auto;
+}
+
+.btn{
+    width:80%;
+    display: block;
+    margin: 30px auto;
+}

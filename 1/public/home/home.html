@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <head>
+        <title>App Home</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="App Home Page">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="home.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="home.js"></script>
+    </head>
+    <body>
+       <div class="signupin-div">
+            <h1>sign-up or sign-in</h1>
+            <input type="radio" name="signupin" class="signup" id="signup" checked>
+            <label for="signup">sign-up</label>
+            <input type="radio" name="signupin" class="signin" id="signin">
+            <label for="signin">sign-in</label>
+            <form action="javascript:hello();">
+                <label for="username"></label>
+                <input required type="text" class="username form-control" name="username" id="username" placeholder="Enter username (e.g. aashish)"/>
+                <label for="password"></label>
+                <input required type="password" class="password form-control" name="password" id="password" placeholder="Enter password (e.g. CBJDBJD)"/>
+                <button type="submit" class="btn btn-primary">sign-up</button>
+            </form>
+        </div>
+    </body>
+</html>
