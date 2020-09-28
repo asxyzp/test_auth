@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="home.css">
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         <script src="home.js"></script>
     </head>
     <body>
@@ -17,13 +18,31 @@
             <label for="signup">sign-up</label>
             <input type="radio" name="signupin" class="signin" id="signin">
             <label for="signin">sign-in</label>
-            <form action="javascript:hello();">
+            <form action="/signup?">
                 <label for="username"></label>
                 <input required type="text" class="username form-control" name="username" id="username" placeholder="Enter username (e.g. aashish)"/>
                 <label for="password"></label>
                 <input required type="password" class="password form-control" name="password" id="password" placeholder="Enter password (e.g. CBJDBJD)"/>
-                <button type="submit" class="btn btn-primary">sign-up</button>
+                <button type="button" class="btn btn-primary">sign-up</button>
             </form>
+            <div class="alert signup-success alert-success alert-dismissible fade show" role="alert">
+                🎉 Yass. You have signed up for the service. Now sign-in to go to dashboard.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="alert signup-fail alert-danger alert-dismissible fade show" role="alert">
+                😞 Whoops! It seems that you have already signed up.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="alert signin-fail alert-danger alert-dismissible fade show" role="alert">
+                😞 Whoops! It seems that your username or password is false.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
         </div>
     </body>
 </html>

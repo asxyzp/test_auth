@@ -36,3 +36,9 @@ input[type="password"]{
     display: block;
     margin: 30px auto;
 }
+
+.alert{
+    width:80%;
+    display: none;
+    margin: 10px auto;
+}
