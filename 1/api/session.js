@@ -57,7 +57,7 @@ function sessiondb(){
         const output = await session.get(sessionID)
         .then((data)=>{     //When sessionID exists in sessionDB
             console.log(`SESSION DETAIL OBTAINED : ${JSON.stringify(data)}`);
-            return 'Y';
+            return data;
         })      
         .catch((err)=>{     //When sessionID doesn't exists in sessionDB
             console.log(`SESSION COULDN'T BE INSRTED BECAUSE `);
